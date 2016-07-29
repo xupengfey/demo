@@ -1,7 +1,7 @@
-package com.example;
+package com.example.demo;
 
-import com.example.mybaties.domain.City;
-import com.example.mybaties.mapper.CityMapper;
+import com.example.demo.domain.City;
+import com.example.demo.mapper.CityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -9,13 +9,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication implements ApplicationRunner {
+public class Application implements ApplicationRunner {
 
     @Autowired
     private CityMapper cityMapper;
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 
