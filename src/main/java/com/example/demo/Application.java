@@ -15,7 +15,10 @@ public class Application implements ApplicationRunner {
     private CityMapper cityMapper;
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication app = new SpringApplication(Application.class);
+        app.run(args);
+
+//        SpringApplication.run(Application.class, args);
     }
 
 
